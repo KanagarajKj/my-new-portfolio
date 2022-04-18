@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main class="portfolio">
+
+        <!-- Nav Start -->
+       <nav class="navbar">
+         
+          <div class="nav_left">
+            <img src="./asests/images/photo-2.avif" alt="Laptop_img" class="nav_img"/>   
+            <a href="#" class="my_name">KANAGARAJ</a>
+          </div>
+
+              <i class="fas fa-bars" id="mobile_menu" class="mobile_menu"></i>
+           
+            <div class="nav">
+            <i class="fas fa-times" id="mobile-exit" class="mobile_menu_exit"></i>
+            <ul class="nav_menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    
+     </nav>
+     <!-- Nav End -->
+
+       <section class="objective">
+                <h2>HEY, MY NAME IS KANAGARAJ.</h2>
+               <p>I am Web Developer.,Passionate about make the world through code.</p>
+               <button  class="projects_btn">PROJECTS</button>
+       </section>
+
+       <section class="about">
+           <h2 class="about_title">ABOUT ME</h2>
+           <P>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</P>
+       </section>
+
+       <section class="about_description">
+           <div class="know_me">
+             <h2>Get to know me!</h2>
+             <p>I'm a <strong>Front End Developer</strong> with proficiencies in HTML, CSS, and JavaScript.I have
+             building the Frontend of Websites and Web Applications that leads to the sucess of overall products.
+             Check out some of my work in the <strong>Projects</strong> section.I have been studying <strong>MERN</strong>
+             apps. I am always eager to add new technologies to my skillset. Being a developer is my calling and my passion.</p>
+           </div>
+           <div class="my_skills">
+               <h2>My skills</h2>
+
+               <div class="first">
+                   <ul class="first">
+                   <li class="html">HTML</li>
+                   <li class="css">CSS</li>
+                   <li class="js">JavaScript</li>
+                   <li class="git">GIT</li>
+                     </ul>
+               </div>
+              
+              <div class="second">
+                  <ul class="second">
+                    <li class="github">GitHub</li>
+                    <li class="res_design">Responsive Design</li>
+                 </ul>
+              </div>
+               
+             
+           </div>
+       </section>
+
+       <section class="projects">
+           <div class="projects_title">
+               <h2>PROJECTS</h2>
+               <P>Here you will find some of the personal projects.</P>
+           </div>
+         <div class="project_imgs">
+             <div class="img_first">
+            <img src="./asests/images/Project 1.png" alt="Testimonial_grid_section" class="testimonial_grid_section">
+             <img src="./asests/images/project 2.png" alt="Grid_section" class="grid_section">
+             <img src="./asests/images/Project 3.png" alt="Stats_preview" class="stats_preview">
+             <img src="./asests/images/Projects 5.png" alt="css_chat_app" class="css_chat_app">
+             <img src="./asests/images/Project 6.png" alt="card" class="card">
+             </div>
+            <div class="images_second">
+                <img src="./asests/images/Project 7.png" alt="qr_code" class="qr_code">
+             <img src="./asests/images/Projects 4.png" alt="order_summary" class="order_summary">
+            </div>
+             
+         </div>
+       </section>
+
+       <section class="contact">
+           <h2>CONTACT</h2>
+           <div class="inputs">
+               <label for="name">Name</label>
+               <input type="text" id="name" placeholder="Enter Your Name">
+               <label for="email">Email</label>
+               <input type="email" id="email" placeholder="Enter Your Email">
+               <label for="textarea">Message</label>
+               <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+               <button class="submit_btn">SUBMIT</button>
+           </div>
+       </section>
+
+       <section class="footer">
+           <div class="footer_title">
+               <h2>SOCIAL</h2>
+           </div>
+           <div class="footer_icons">
+           <i class="fab fa-github"></i>
+           <i class="fab fa-instagram"></i>
+           <i class="fab fa-linkedin-in"></i>
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-twitter"></i>
+           </div>
+          <div class="copy_right">
+               <small>&copy;Copyright2022.Made by</small>
+               <a href="./index.html">kanagaraj</a>
+          </div>
+       </section>
+    
+
+  
+    </main>
+
+
+    <!-- <script src="./scripts/script.js">
+        
+    </script> -->
+
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu');
+      const nav = document.getElementById('nav');
+      mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+      });
+
+      mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+      });
+    </script>
+
+</body>
+</html>
